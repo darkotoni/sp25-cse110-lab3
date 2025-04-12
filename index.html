@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="firstmeetlab.ico" type="image">
     <title>Team's Meeting notes</title>
   </head>
   <body>
@@ -17,44 +20,145 @@
         </header>
 
         <main>
-            <section id="Attendance">
+            <section id="attendance">
                 <h2>Attendance</h2>
                 <p>Meeting participants:</p>
                 <ul>
-                    <li><strong>Tim</strong> - Team Lead</li>
-                    <li><em>Jose</em> - Dev</li>
+                    <li>Tim - <strong>Team Lead</strong></li>
+                    <li>Jose - <em>Dev</em></li>
                     <li>Bob - QA</li>
                 </ul>
             </section>
 
             <hr>
 
-            <section id="Agenda">
+            <section id="agenda">
                 <h2>Agenda</h2>
                 <ol>
 
                     <li>Review previous items</li>
-                    <li>Research on stocks</li>
+                    <li><b>Research on stocks</b></li>
                     <li>Design</li>
+                    <li><i>If time implement</i></li>
                 </ol>
             </section>
 
             <hr>
 
-            <section id="Unfinished">
+            <section id="unfinished">
                 <h2>Unfinished Business</h2>
                 <p>Previous topics</p>
                 <div>
-                    <span>Resarch on apis</span> - Assigned to Jose
+                    <span>Resarch on APIs</span> - Assigned to Jose
                 </div>
                 <br>
-                <p>More notes ...</p>
             </section>
 
             <hr>
             
+            <section id="new">
+                <h2>New Business</h2>
+                <p>New items to be discussed</p>
+                <ul>
+                    <li>New features</li>
+                    <li>UI elements</li>
+                </ul>
+                <details>
+                    <summary>Detailed Points</summary>
+                    <p>Talked about how features will effect UI</p>
+                </details>
+            </section>
+
+            <hr>
+
+            <section id="misc">
+                <h2>Miscellaneous</h2>
+                <p>Questions</p>
+                <ul>
+                    <li>What platforms?</li>
+                </ul>
+            </section>
+            <hr>
+
+            <section id="diagrams">
+                <h2>Diagrams</h2>
+                <h3>CS diagram</h3>
+                <img src="download.jpg" alt="CS diagram">
+
+
+            </section>
+
+            <hr>
+
+            <section id="recordings">
+
+                <h2>Meeting Recording</h2>
+                <h3>Audio Recording</h3>
+                <audio controls>
+                    <source src="meeting_audio.mp3" type="audio/mpeg">
+                    Browser does not support the audio element
+                </audio>
+                <h3>Video Recording</h3>
+                <video width="320" height="240" controls>
+                    <source src="meeting_video.mp4" type="video/mp4">
+                    Browser doesn't support video element
+                </video>
+            </section>
 
 
         </main>
+
+        <hr>
+        <section id="feedback">
+            <h2>Feedback form</h2>
+            <form>
+                <fieldset>
+                    <legend>Meeting Feedback</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"><br><br>
+
+                    <label for="feedbackDate">Date:</label>
+                    <input type="date" id="feedbackDate" name="feedbackDate"><br><br>
+
+                    <p>Was the meeting productive?</p>
+                    <input type="radio" id="yes" name="productive" value="yes">
+                    <label for="yes">Yes</label><br>
+                    <input type="radio" id="no" name="productive" value="no">
+                    <label for="no">No</label><br>
+                    <br>
+                    
+                    <p>Select topics covered in meeting</p>
+                    <input type="checkbox" id="topic1" name="topic1" value="Research">
+                    <label for="topic1">API research</label>
+                    <input type="checkbox" id="topic2" name="topic2" value="Funding">
+                    <label for="topic2">Funding</label><br><br>
+
+                    <label for="suggestions">Any suggestions for improvement? </label><br>
+                    <textarea id="suggestions" name="suggestions" rows="4" cols="50"></textarea>
+                    <br><br>
+
+                    <label for="nextMeeting">Next meeting topics</label>
+                    <input list="meetingTopics" name="nextMeeting" id="nextMeeting">
+                    <datalist id="meetingTopics">
+                        <option value="Implementation">Implementation</option>
+                        <option value="Testing">Testing</option>
+                        <option value="Design">Design</option>
+                    </datalist>
+
+                    <label for="team">Your team:</label>
+                    <select id="team" name="team">
+                        <option value="development">Development</option>
+                        <option value="management">Management</option>
+                    </select><br><br>
+
+
+                </fieldset>
+            </form>
+        </section>
+        <button type="submit">Submit Feedback</button>
+        <footer>
+            <p>Meeting minutes prepared by: Darian</p>
+            <p>Next meeting scheduled at: 4/19/2025</p>
+        </footer>
   </body>
 </html>
