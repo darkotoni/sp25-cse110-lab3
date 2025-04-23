@@ -1,10 +1,10 @@
 
 /* CSS Variables with fallbacks */
 :root {
-    --primary-color: #3a5a78;
-    --secondary-color: #f5f5f5;
-    --accent-color: #e63946;
-    --text-color: #333;
+    --primary-color: #375775;
+    --secondary-color: #fffcfc;
+    --accent-color: #ea3d4c;
+    --text-color: #393939;
     --font-main: 'Poppins', sans-serif;
     --spacing-unit: 1rem;
     --border-radius: 8px;
@@ -39,7 +39,7 @@
   
   /* ID Selector */
   #attendance {
-    background-color: rgba(230, 240, 255, 0.7);
+    background-color: rgba(223, 236, 255, 0.7);
     padding: 15px;
     border-radius: var(--border-radius);
     margin-bottom: 20px;
@@ -92,12 +92,12 @@
   /* Adjacent Sibling Combinator */
   h2 + p {
     font-weight: bold;
-    color: #555;
+    color: #484848;
   }
   
   /* Combining Two Selectors */
   section.highlighted {
-    background-color: #f0f8ff;
+    background-color: #d9edfe;
     border-left: 4px solid var(--accent-color);
   }
   
@@ -117,7 +117,7 @@
   
   /* Colors using different formats */
   header {
-    background-color: #1c3144; 
+    background-color: #1c364c; 
     color: rgb(255, 255, 255); 
     padding: 1.5rem;
     border-radius: 0.5rem;
@@ -126,16 +126,16 @@
   
   main {
     background-color: hsl(0, 0%, 100%); 
-    border-top: 3px solid hsla(210, 50%, 50%, 0.5); 
+    border-top: 3px solid hsla(210, 59%, 45%, 0.5); 
   }
   
 
   #new {
-    border-left: 4px solid #1a77c2; 
+    border-left: 4px solid #1977c4; 
   }
   
   #agenda {
-    border-left: 4px solid #6e4d6c; 
+    border-left: 4px solid #694667; 
   }
   
   /* Text Styling */
@@ -167,7 +167,7 @@
     padding: 1rem 1.5rem;
     border: 2px solid #ddd;
     border-radius: 0.5rem;
-    background-color: #f9f9f9;
+    background-color: #ddd;
   }
   
   /* Display Properties */
@@ -187,7 +187,7 @@
   span {
     display: inline-block;
     padding: 0.25rem 0.5rem;
-    background-color: #eef;
+    background-color: #ddd;
     border-radius: 4px;
   }
   
@@ -326,13 +326,13 @@
   /* Additional formatting for specific elements */
   hr {
     height: 2px;
-    background-color: #eee;
+    background-color: #ddd;
     border: none;
     margin: 1.5rem 0;
   }
   
   details {
-    background-color: #f8f8f8;
+    background-color: #ddd;
     padding: 0.5rem;
     border-radius: 4px;
     margin: 1rem 0;
