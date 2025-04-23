@@ -106,7 +106,7 @@
     padding-bottom: 1.5em;
   }
   
-  /* Nested Selectors - Removed the nested syntax and replaced with standard selectors */
+  /* Nested Selectors*/
   section > h2 {
     font-size: 1.8rem;
   }
