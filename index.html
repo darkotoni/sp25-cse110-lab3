@@ -4,139 +4,186 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="firstmeetlab.ico" type="image/x-icon">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <title>Team's Meeting notes</title>
+    
+    <!-- Internal CSS with <style> tags -->
+    <style>
+      /* Example of internal CSS */
+      main {
+        padding: 2rem;
+        border-radius: 8px;
+      }
+      
+      hr {
+        height: 2px;
+        background-color: #ddd;
+        border: none;
+        margin: 2rem 0;
+      }
+      
+      details > p {
+        padding: 1rem;
+        background-color: #f0f0f0;
+        border-left: 3px solid #ccc;
+      }
+      
+      body {
+        background-image: linear-gradient(to bottom right, #f5f7fa, #e4e8ed);
+        min-height: 100vh;
+      }
+    </style>
   </head>
   <body>
-        <header>
-            <h1>First Meet</h1>
-            <h2>Date: 4/11/25</h2>
-            <h3>Topic: Research and Brainstorm</h3>
-            <nav>
-                <a href="#attendance">Attendance</a> |
-                <a href="#agenda">Agenda</a> |
-                <a href="#unfinished">Unfinished Business</a> |
-                <a href="#new">New Business</a>
-            </nav>
-        </header>
+    <div class="container">
+      <header>
+          <!-- Inline CSS example -->
+          <h1 style="color: white; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">First Meet</h1>
+          <h2 style="color: #e0e0e0; text-align: right;">Date: 4/11/25</h2>
+          <h3>Topic: Research and Brainstorm</h3>
+          <nav>
+              <a href="#attendance">Attendance</a>
+              <a href="#agenda">Agenda</a>
+              <a href="#unfinished">Unfinished Business</a>
+              <a href="#new">New Business</a>
+          </nav>
+      </header>
 
-        <main>
-            <section id="attendance">
-                <h2>Attendance</h2>
-                <p>Meeting participants:</p>
-                <ul>
-                    <li>Tim - <strong>Team Lead</strong></li>
-                    <li>Jose - <em>Dev</em></li>
-                    <li>Bob - QA</li>
-                </ul>
-            </section>
+      <main class="center-content">
+          <section id="attendance" class="highlighted">
+              <h2>Attendance</h2>
+              <p>Meeting participants:</p>
+              <ul>
+                  <li>Tim - <strong>Team Lead</strong></li>
+                  <li>Jose - <em>Dev</em></li>
+                  <li>Bob - QA</li>
+              </ul>
+          </section>
 
-            <hr>
+          <hr>
 
-            <section id="agenda">
-                <h2>Agenda</h2>
-                <ol>
+          <section id="agenda" class="highlighted">
+              <h2>Agenda</h2>
+              <ol>
+                  <li>Review previous items</li>
+                  <li><b>Research on stocks</b></li>
+                  <li>Design</li>
+                  <li><i>If time implement</i></li>
+              </ol>
+          </section>
 
-                    <li>Review previous items</li>
-                    <li><b>Research on stocks</b></li>
-                    <li>Design</li>
-                    <li><i>If time implement</i></li>
-                </ol>
-            </section>
+          <hr>
 
-            <hr>
+          <section id="unfinished">
+              <h2>Unfinished Business</h2>
+              <p>Previous topics</p>
+              <div>
+                  <span>Resarch on APIs</span> - Assigned to Jose
+              </div>
+              <br>
+          </section>
 
-            <section id="unfinished">
-                <h2>Unfinished Business</h2>
-                <p>Previous topics</p>
-                <div>
-                    <span>Resarch on APIs</span> - Assigned to Jose
-                </div>
-                <br>
-            </section>
+          <hr>
+          
+          <section id="new">
+              <h2>New Business</h2>
+              <p>New items to be discussed</p>
+              <ul>
+                  <li>New features</li>
+                  <li>UI elements</li>
+              </ul>
+              <details>
+                  <summary>Detailed Points</summary>
+                  <p>Talked about how features will effect UI</p>
+              </details>
+          </section>
 
-            <hr>
-            
-            <section id="new">
-                <h2>New Business</h2>
-                <p>New items to be discussed</p>
-                <ul>
-                    <li>New features</li>
-                    <li>UI elements</li>
-                </ul>
-                <details>
-                    <summary>Detailed Points</summary>
-                    <p>Talked about how features will effect UI</p>
-                </details>
-            </section>
+          <hr>
 
-            <hr>
+          <section id="misc">
+              <h2>Miscellaneous</h2>
+              <p>Questions</p>
+              <ul>
+                  <li>What platforms?</li>
+              </ul>
+          </section>
+          
+          <hr>
 
-            <section id="misc">
-                <h2>Miscellaneous</h2>
-                <p>Questions</p>
-                <ul>
-                    <li>What platforms?</li>
-                </ul>
-            </section>
-            <hr>
+          <section id="diagrams">
+              <h2>Diagrams</h2>
+              <h3>CS diagram</h3>
+              <img src="download.jpg" alt="CS diagram" style="border: 3px solid var(--accent-color); padding: 5px;">
+          </section>
 
-            <section id="diagrams">
-                <h2>Diagrams</h2>
-                <h3>CS diagram</h3>
-                <img src="download.jpg" alt="CS diagram">
+          <hr>
 
-
-            </section>
-
-            <hr>
-
-            <section id="recordings">
-
-                <h2>Meeting Recording</h2>
+          <section id="recordings">
+              <h2>Meeting Recording</h2>
+              <div>
                 <h3>Audio Recording</h3>
                 <audio controls>
                     <source src="meeting_audio.mp3" type="audio/mpeg">
                     Browser does not support the audio element
                 </audio>
+              </div>
+              <div>
                 <h3>Video Recording</h3>
                 <video width="320" height="240" controls>
                     <source src="meeting_video.mp4" type="video/mp4">
                     Browser doesn't support video element
                 </video>
-            </section>
+              </div>
+          </section>
+      </main>
 
-
-        </main>
-
-        <hr>
-        <section id="feedback">
-            <h2>Feedback form</h2>
-            <form>
-                <fieldset>
-                    <legend>Meeting Feedback</legend>
+      <hr>
+      
+      <section id="feedback">
+          <h2>Feedback form</h2>
+          <form>
+              <fieldset>
+                  <legend>Meeting Feedback</legend>
+                  
+                  <div class="form-group">
                     <label for="name">Name:</label>
-                    <input type="text" id="name" name="name"><br><br>
+                    <input type="text" id="name" name="name">
+                  </div>
 
+                  <div class="form-group">
                     <label for="feedbackDate">Date:</label>
-                    <input type="date" id="feedbackDate" name="feedbackDate"><br><br>
+                    <input type="date" id="feedbackDate" name="feedbackDate">
+                  </div>
 
+                  <div class="form-group">
                     <p>Was the meeting productive?</p>
-                    <input type="radio" id="yes" name="productive" value="yes">
-                    <label for="yes">Yes</label><br>
-                    <input type="radio" id="no" name="productive" value="no">
-                    <label for="no">No</label><br>
-                    <br>
-                    
+                    <div class="radio-options">
+                      <input type="radio" id="yes" name="productive" value="yes">
+                      <label for="yes">Yes</label>
+                      <input type="radio" id="no" name="productive" value="no">
+                      <label for="no">No</label>
+                    </div>
+                  </div>
+                  
+                  <div class="form-group">
                     <p>Select topics covered in meeting</p>
-                    <input type="checkbox" id="topic1" name="topic1" value="Research">
-                    <label for="topic1">API research</label>
-                    <input type="checkbox" id="topic2" name="topic2" value="Funding">
-                    <label for="topic2">Funding</label><br><br>
+                    <div class="checkbox-options">
+                      <input type="checkbox" id="topic1" name="topic1" value="Research">
+                      <label for="topic1">API research</label>
+                      <input type="checkbox" id="topic2" name="topic2" value="Funding">
+                      <label for="topic2">Funding</label>
+                    </div>
+                  </div>
 
-                    <label for="suggestions">Any suggestions for improvement? </label><br>
+                  <div class="form-group">
+                    <label for="suggestions">Any suggestions for improvement? </label>
                     <textarea id="suggestions" name="suggestions" rows="4" cols="50"></textarea>
-                    <br><br>
+                  </div>
 
+                  <div class="form-group">
                     <label for="nextMeeting">Next meeting topics</label>
                     <input list="meetingTopics" name="nextMeeting" id="nextMeeting">
                     <datalist id="meetingTopics">
@@ -144,21 +191,24 @@
                         <option value="Testing">Testing</option>
                         <option value="Design">Design</option>
                     </datalist>
+                  </div>
 
+                  <div class="form-group">
                     <label for="team">Your team:</label>
                     <select id="team" name="team">
                         <option value="development">Development</option>
                         <option value="management">Management</option>
-                    </select><br><br>
-
-
-                </fieldset>
-            </form>
-        </section>
-        <button type="submit">Submit Feedback</button>
-        <footer>
-            <p>Meeting minutes prepared by: Darian</p>
-            <p>Next meeting scheduled at: 4/19/2025</p>
-        </footer>
+                    </select>
+                  </div>
+              </fieldset>
+              <button type="submit">Submit Feedback</button>
+          </form>
+      </section>
+      
+      <footer>
+          <p>Meeting minutes prepared by: Darian</p>
+          <p>Next meeting scheduled at: 4/19/2025</p>
+      </footer>
+    </div>
   </body>
 </html>
